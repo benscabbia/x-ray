@@ -7,6 +7,7 @@ For a live demo, head over to [my blog](https://www.benjaminscabbia.co.uk/blog/p
 The project makes use of the styles from ghost.css, which is what enables you to quickly scan the page for unexpected styling. X-Ray takes Ghost and makes it toggleable by bookmark. There is no longer need to refresh the page (or manually remove the style). 
 
 ## Usage: 
+*__Note:__ this is the only page where the toggle will not function as expected, as the string matcher will match the code below, causing elements to be incorrectly removed! Try it on all your other tabs, and you shouldn't experience any problems!*
 
 Grab the code below (```x-ray.js```):
 ```javascript
