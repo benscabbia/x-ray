@@ -19,4 +19,4 @@ Now drag it onto your bookmarks, or create a bookmark and paste the code in the 
 
 Both ```x-ray.js``` and ```x-ray-debug.js``` are equivalent, except debug will log additional information in console. 
 
-More information on [my blog](https://www.benjaminscabbia.co.uk/blog/programming/x-ray/). 
+![alt text](http://i.imgur.com/o9dhThH.gif "x-ray configuration")
