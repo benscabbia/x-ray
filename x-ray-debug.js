@@ -1,6 +1,5 @@
 javascript: (
     function () {
-        var style = "<style>*{background:#000!important;color:#0f0!important;outline:solid #f00 1px!important;}</style>";
         var elements = document.body.getElementsByTagName("*");
         var items = [];
         for (var i = 0; i < elements.length; i++) {
@@ -20,7 +19,7 @@ javascript: (
             }
         } else {
             console.log("Starting x-ray");
-            document.body.innerHTML += style;
+            document.body.innerHTML += "<style>*{background:#000!important;color:#0f0!important;outline:solid #f00 1px!important;}</style>";
         }
     }
 )();
