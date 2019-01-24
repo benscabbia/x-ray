@@ -12,7 +12,7 @@ The project makes use of the styles from ghost.css, which is what enables you to
 
 Grab the code below (```x-ray.js```):
 ```javascript
-javascript: ( function () { var style = "<style>*{background:#000!important;color:#0f0!important;outline:solid #f00 1px!important;}</style>"; var elements = document.body.getElementsByTagName("*"); var items = []; for (var i = 0; i < elements.length; i++) { if (elements[i].innerHTML.indexOf("background:#000!important;color:#0f0!important;outline:solid #f00 1px!important;") != -1) { items.push(elements[i]); } } if (items.length > 0) { for (var i = 0; i < items.length; i++) { items[i].innerHTML = ""; } } else { document.body.innerHTML += style; } } )();
+javascript: ( function () { var style = "<style>*{background:#000!important;color:#0f0!important;outline:solid #f00 1px!important;}</style>"; var elements = document.body.getElementsByTagName("*"); var items = []; for (var i = 0; i < elements.length; i++) { if (elements[i].innerHTML.indexOf("background:#000!important;color:#0f0!important;outline:solid #f00 1px!important;") != -1) { items.push(elements[i]); } } if (items.length > 0) { for (var i = 0; i < items.length; i++) { document.body.removeChild(items[i]); } } else { document.body.innerHTML += style; } } )();
 ``` 
 
 Now drag it onto your bookmarks, or create a bookmark and paste the code in the URL/location field. Enjoy!

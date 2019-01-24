@@ -12,10 +12,9 @@ javascript: (
             console.log("Stopping x-ray");
             console.log("Num items in items: " + items.length);
             for (var i = 0; i < items.length; i++) {
+                console.log("Removing:");
                 console.log(items[i]);
-                console.log("Before: " + items[i].innerHTML);
-                items[i].innerHTML = "";
-                console.log("After: " + items[i].innerHTML);
+                document.body.removeChild(items[i]);
             }
         } else {
             console.log("Starting x-ray");
